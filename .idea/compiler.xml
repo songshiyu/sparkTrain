@@ -12,7 +12,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sparkStreamingTrain" target="1.8" />
-      <module name="sparkTrain" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
