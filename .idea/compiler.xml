@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="sparkStreamingTrain" />
         <module name="sparkTrain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="sparkStreamingTrain" target="1.8" />
       <module name="sparkTrain" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -4,4 +4,5 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sparkStreamingTrain.iml" filepath="$PROJECT_DIR$/sparkStreamingTrain.iml" />
     </modules>
-  </com
+  </component>
+</project>
