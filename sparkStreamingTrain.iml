@@ -161,7 +161,6 @@
     <orderEntry type="library" name="Maven: org.apache.spark:spark-network-shuffle_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-unsafe_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.5" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.16" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.16" level="project" />
     <orderEntry type="library" name="Maven: com.ning:compress-lzf:1.0.3" level="project" />
@@ -213,7 +212,6 @@
     <orderEntry type="library" name="Maven: org.apache.xbean:xbean-asm5-shaded:4.4" level="project" />
     <orderEntry type="library" name="Maven: org.spark-project.spark:unused:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming-flume_2.11:2.2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming-flume-sink_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flume:flume-ng-core:1.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flume:flume-ng-configuration:1.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.avro:avro-ipc:1.7.4" level="project" />
@@ -221,6 +219,7 @@
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.mina:mina-core:2.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flume:flume-ng-sdk:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming-flume-sink_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming_2.11:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-scala_2.11:2.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-reflect:2.11.7" level="project" />
@@ -232,5 +231,6 @@
     <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.5" level="project" />
   </component>
 </module>

@@ -17,12 +17,12 @@ import java.util.Iterator;
  * @date 2020/2/12 22:20
  * Spark Streaming 基于push方式整合flume
  **/
-public class SparkStreamingWithFlume {
+public class SparkStreamingFlumePull {
     public static void main(String[] args) throws InterruptedException {
-        SparkConf conf = new SparkConf().setMaster("local[*]").setAppName("SparkStreamingWithFlume");
+        SparkConf conf = new SparkConf().setMaster("local[*]").setAppName("SparkStreamingFlumePush");
         JavaStreamingContext jssc = new JavaStreamingContext(conf, Seconds.apply(5));
 
-        JavaReceiverInputDStream<SparkFlumeEvent> flumeStream = FlumeUtils.createStream(jssc, "0.0.0.0", 41414);
+        JavaReceiverInputDStream<SparkFlumeEvent> flumeStream = FlumeUtils.createPollingStream(jssc, "192.168.137.129", 41414);
         flumeStream.flatMap(new FlatMapFunction<SparkFlumeEvent,String>() {
             @Override
             public Iterator<String> call(SparkFlumeEvent sparkFlumeEvent) throws Exception {
