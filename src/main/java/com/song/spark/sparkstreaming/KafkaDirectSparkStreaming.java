@@ -17,14 +17,14 @@ import java.util.*;
  **/
 public class KafkaDirectSparkStreaming {
     public static void main(String[] args) throws InterruptedException {
-        SparkConf conf = new SparkConf();/*.setAppName(KafkaDirectSparkStreaming.class.getSimpleName()).setMaster("local[*]");*/
+        SparkConf conf = new SparkConf().setAppName(KafkaDirectSparkStreaming.class.getSimpleName()).setMaster("local[*]");
         JavaStreamingContext jssc = new JavaStreamingContext(conf, Seconds.apply(5));
 
         Map<String,String> kafkaParams = new HashMap<>();
         kafkaParams.put("metadata.broker.list", "192.168.137.129:9092");
 
         Set<String> topic = new HashSet<>();
-        topic.add("kafka_streaming_song");
+        topic.add("streaming_song");
 
         JavaPairInputDStream<String, String> directStream = KafkaUtils.createDirectStream(
                 jssc,
